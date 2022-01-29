@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
 
     <!-- Styles -->
-    <link rel="stylesheet" href="/styles/home.css" />
+    <link rel="stylesheet" href="/styles/newAccount.css" />
     <link rel="stylesheet" href="/styles/responsive.css" />
 
     <!-- Fonts -->
@@ -29,13 +29,25 @@
           <div id="info">
             <div class="" id="title">
               <img src="./assets/log-in.svg" alt="Login" />
-              <span>Faça seu login</span>
+              <span>Crie sua conta</span>
             </div>
-            <p>Entre com suas informações de cadastro</p>
+            <p>E venha conosco nessa aventura!</p>
           </div>
 
           <div class="form">
             <form action="">
+              <label for="name">Nome</label>
+              <div class="input-group" id="name-group">
+                <div class="input name">
+                  <img src="./assets/user-o.png" alt="icône de uma pessoa" />
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Digite seu nome"
+                  />
+                </div>
+              </div>
+
               <label for="email">E-mail</label>
               <div class="input-group" id="email-group">
                 <div class="input email">
@@ -60,25 +72,26 @@
                 </div>
               </div>
 
-              <div class="" id="form-footer">
-                <div id="checkbox-group">
-                  <label class="container">
-                    <input type="checkbox" checked="checked" />
-                    <span class="checkmark"></span>
-                    Lembre-me
-                  </label>
+              <label for="password-confirm">Confirma sua senha</label>
+              <div class="input-group" id="confirm-password-group">
+                <div class="input password">
+                  <img src="./assets/lock.svg" alt="icône de um cadeado" />
+                  <input
+                    type="password"
+                    name="password-confirm"
+                    placeholder="Confirme sua senha"
+                  />
                 </div>
-                <a href="#">Esqueci minha senha</a>
               </div>
 
               <button type="submit" class="button">
-                <p>Entrar</p>
+                <p>Criar conta</p>
               </button>
             </form>
 
             <div id="create-account">
-              <span>Não tem um conta?</span>
-              <a href="/newAccount.html">Registre-se</a>
+              <span>Já possui conta?</span>
+              <a href="/">Faça Login</a>
             </div>
           </div>
         </div>
@@ -86,7 +99,7 @@
 
       <div class="" id="background-image">
         <img
-          src="./assets/side-image.jpg"
+          src="./assets/car-2.jpg"
           alt="Imagem de um carro com uma barraca de camping"
         />
       </div>
