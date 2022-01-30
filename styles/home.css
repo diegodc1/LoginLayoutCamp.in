@@ -165,6 +165,18 @@ label {
   background-color: var(--primary-color);
 }
 
+.input.email .normal.off {
+  display: none;
+}
+
+.input.email .focus {
+  display: none;
+}
+
+.input.email .focus.on {
+  display: block;
+}
+
 /************ FORM FOOTER ************/
 #form-footer {
   display: flex;
